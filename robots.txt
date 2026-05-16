@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://paulogsimplicio.github.io/sitemap.xml
+Sitemap: https://paulogsimplicio.github.io/my-bio/sitemap.xml
