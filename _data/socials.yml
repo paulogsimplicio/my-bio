@@ -4,8 +4,8 @@
 cv_pdf: /assets/pdf/Paulo_Galvao_Simplicio_Robotics_Resume__Copy_.pdf # path to your CV PDF file
 email: paulovgsimplicio@gmail.com # your email address
 github_username: paulovgalvao # your GitHub username
-linkedin_username: # add your LinkedIn username here
-scholar_userid: # add your Google Scholar ID here (e.g., qc6CJjYAAAAJ)
+linkedin_username: paulo-galvao-simplicio
+scholar_userid: 39QqWAkAAAAJ
 rss_icon: true # comment this line to hide the RSS icon
 # wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
