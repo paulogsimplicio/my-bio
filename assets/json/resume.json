@@ -1,221 +1,273 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Paulo V. Galvao Simplicio",
+    "label": "Ph.D. Candidate in Robotics Engineering",
     "image": "",
-    "email": "einstein@example.com",
-    "phone": "(912) 123-4567",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "paulovgsimplicio@gmail.com",
+    "phone": "(304) 435-2196",
+    "summary": "Ph.D. candidate in Robotics Engineering at West Virginia University, working on autonomous UAV systems for infrastructure inspection. Research spans motion planning, photogrammetry-aware coverage planning, real-time onboard replanning, and visual-inertial state estimation.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "city": "Morgantown",
       "countryCode": "US",
-      "region": "California"
+      "region": "West Virginia"
     },
-    "profiles": []
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "paulovgalvao",
+        "url": "https://github.com/paulovgalvao"
+      }
+    ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "location": "Princeton University, NJ",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity", "Description 2."]
+      "name": "West Virginia University — Robotics Lab",
+      "position": "Graduate Research Assistant, Ph.D. Candidate",
+      "location": "Morgantown, WV",
+      "startDate": "2023-01-01",
+      "endDate": "",
+      "summary": "Lead UAV autonomy research on a DOE-funded program for autonomous inspection of coal-ash and tailings dams, owning the planning, perception-aware mapping, and onboard replanning stack.",
+      "highlights": [
+        "Designed a multi-resolution motion planner (A*/RRT* on octrees, OMPL, Open3D) generating collision-free tunnel corridors for UAV inspection; published at ICUAS 2025.",
+        "Built a photogrammetry-aware coverage planner enforcing GSD, image-overlap, row-spacing, and view-geometry constraints; published at ICUAS 2024.",
+        "Engineered real-time online replanning with hazard detection and return-to-home (RTH) logic for battery-swap missions.",
+        "Training PPO policies in NVIDIA Isaac Lab for autonomous next-best-view (NBV) planning (ongoing).",
+        "Developing real-time state estimation fusing visual odometry with GNSS/IMU in factor graphs (GTSAM) (ongoing)."
+      ]
     },
     {
-      "name": "California Institute of Technology",
-      "position": "Visiting Professor",
-      "location": "Pasadena, California, US",
-      "startDate": "1933-01-01",
-      "endDate": "1933-01-01",
+      "name": "University of São Paulo — Center for Robotics (CROB)",
+      "position": "Graduate Researcher, M.Sc. Electrical Engineering",
+      "location": "São Paulo, Brazil",
+      "startDate": "2019-08-01",
+      "endDate": "2021-12-01",
       "summary": "",
-      "highlights": ["Description 1.", "Description 2."]
+      "highlights": [
+        "Developed robust quadrotor controllers (PID, LQR, MPC, disturbance-observer-based) for trajectory tracking under wind gusts and parametric uncertainty; validated in Gazebo and on hardware.",
+        "Results published in IET Control Theory & Applications (2024) and IEEE Access (2022)."
+      ]
     },
     {
-      "name": "Kaiser Wilhelm Institute for Physics",
-      "position": "Director",
-      "location": "Berlin, Germany",
-      "startDate": "1917-01-01",
-      "endDate": "1933-01-01",
+      "name": "University of São Paulo",
+      "position": "Teaching Assistant — Graduate-Level Artificial Intelligence",
+      "location": "São Paulo, Brazil",
+      "startDate": "2022-07-01",
+      "endDate": "2022-12-01",
       "summary": "",
-      "highlights": []
+      "highlights": [
+        "Led lab sections and office hours, graded projects, and refined lab materials and rubrics with the instructor."
+      ]
     },
     {
-      "name": "Karl-Ferdinand University",
-      "position": "Professor of Theoretical Physics",
-      "location": "Prague, Czechoslovakia",
-      "startDate": "1911-01-01",
-      "endDate": "1917-01-01",
+      "name": "Sennze Automation",
+      "position": "Hardware & Embedded Software Intern",
+      "location": "Brazil",
+      "startDate": "2015-05-01",
+      "endDate": "2015-12-01",
       "summary": "",
-      "highlights": []
-    },
-    {
-      "name": "University of Zurich",
-      "position": "Associate Professor of Theoretical Physics",
-      "location": "Zurich, Switzerland",
-      "startDate": "1909-01-01",
-      "endDate": "1911-01-01",
-      "summary": "",
-      "highlights": []
+      "highlights": [
+        "Contributed to an automated wireline retrieval system with encoder-based depth tracking and safety alarms to prevent pull-head shoot-outs."
+      ]
     }
   ],
-  "volunteer": [
-    {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
-    }
-  ],
+  "volunteer": [],
   "education": [
     {
-      "institution": "University of Zurich",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Physics",
-      "studyType": "PhD",
-      "startDate": "1900-01-01",
-      "endDate": "1905-01-01",
-      "score": "",
-      "courses": ["Theory of Relativity"],
-      "highlights": ["Description 1.", "Description 2."]
+      "institution": "West Virginia University",
+      "location": "Morgantown, WV",
+      "url": "https://www.wvu.edu/",
+      "area": "Robotics Engineering",
+      "studyType": "Ph.D.",
+      "startDate": "2023-01-01",
+      "endDate": "2026-12-01",
+      "score": "4.00/4.00",
+      "courses": [],
+      "highlights": ["Advisor: Prof. G. A. S. Pereira", "DOE-funded research on autonomous UAV inspection"]
     },
     {
-      "institution": "Eidgenössische Technische Hochschule",
-      "location": "Zurich, Switzerland",
-      "area": "Physics",
-      "studyType": "Federal teaching diploma",
-      "startDate": "1896-01-01",
-      "endDate": "1900-01-01",
-      "score": "",
+      "institution": "University of São Paulo",
+      "location": "São Paulo, Brazil",
+      "url": "https://www.usp.br/",
+      "area": "Electrical Engineering (Dynamical Systems)",
+      "studyType": "M.Sc.",
+      "startDate": "2019-08-01",
+      "endDate": "2021-12-01",
+      "score": "4.00/4.00",
       "courses": [],
-      "highlights": ["Description 1.", "Description 2."]
+      "highlights": []
+    },
+    {
+      "institution": "Tiradentes University",
+      "location": "Maceió, Brazil",
+      "area": "Mechatronics Engineering",
+      "studyType": "B.Eng.",
+      "startDate": "2014-01-01",
+      "endDate": "2018-12-01",
+      "score": "8.98/10.0",
+      "courses": [],
+      "highlights": ["Top of Class"]
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "Jack and Marietta Mullenger Fellowship",
+      "date": "2024-01-01",
+      "awarder": "West Virginia University",
+      "summary": "Awarded for academic year 2024–2025."
     },
     {
-      "title": "Max Planck Medal",
-      "date": "2029-01-01",
-      "awarder": "German Physical Society",
+      "title": "SARC–BARINet Aerospace Competition — International Winner",
+      "date": "2021-12-01",
+      "awarder": "SARC–BARINet",
+      "summary": "Flying U2 Team, University of São Paulo."
+    },
+    {
+      "title": "XPRIZE Rainforest — Finalist",
+      "date": "2024-01-01",
+      "awarder": "XPRIZE Foundation",
+      "summary": "Brazilian Team (University of São Paulo)."
+    },
+    {
+      "title": "Graduated Top of Class, B.Eng. Mechatronics Engineering",
+      "date": "2018-12-01",
+      "awarder": "Tiradentes University",
       "summary": ""
     }
   ],
   "certificates": [
     {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "icon": "fa-solid fa-location-dot"
-    },
-    {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "icon": "fa-solid fa-envelope"
+      "name": "FAA Remote Pilot Certificate (Part 107)",
+      "issuer": "Federal Aviation Administration",
+      "icon": "fa-solid fa-plane"
     }
   ],
   "publications": [
     {
-      "name": "Zur Elektrodynamik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "Multi-Resolution UAV Path Replanning for Inspection of Tailings Dams",
+      "publisher": "ICUAS 2025",
+      "releaseDate": "2025-01-01",
+      "summary": "Multi-resolution motion planner (A*/RRT* on octrees, OMPL, Open3D) generating collision-free tunnel corridors for UAV inspection in cluttered environments."
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "Mission Planning for Photogrammetry-Based Autonomous 3D Mapping of Dams Using a Commercial UAV",
+      "publisher": "ICUAS 2024",
+      "releaseDate": "2024-01-01",
+      "summary": "Photogrammetry-aware coverage planner enforcing GSD, image-overlap, row-spacing, and view-geometry constraints for high-fidelity 3D reconstruction."
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "A Behavior Tree Approach for Battery-Aware Inspection of Large Structures Using Drones",
+      "publisher": "ICUAS 2024",
+      "releaseDate": "2024-01-01",
+      "summary": "Behavior tree framework for battery-aware drone inspection enabling autonomous battery-swap missions."
+    },
+    {
+      "name": "Robust and Intelligent Control of Quadrotors Subject to Wind Gusts",
+      "publisher": "IET Control Theory & Applications",
+      "releaseDate": "2024-01-01",
+      "summary": "Robust and intelligent quadrotor controllers (PID, LQR, MPC, disturbance-observer-based) for trajectory tracking under wind gusts and parametric uncertainty."
+    },
+    {
+      "name": "Multi-UAV Collaborative System for the Identification of Surface Cyanobacterial Blooms and Aquatic Macrophytes",
+      "publisher": "Journal of Intelligent & Robotic Systems",
+      "releaseDate": "2024-01-01",
+      "summary": "Multi-UAV system for autonomous identification of surface cyanobacterial blooms and aquatic macrophytes."
+    },
+    {
+      "name": "Disturbance Observer-Based Robust Control of a Quadrotor Subject to Parametric Uncertainties and Wind Disturbance",
+      "publisher": "IEEE Access",
+      "releaseDate": "2022-01-01",
+      "summary": "Disturbance observer-based robust control of a quadrotor subject to parametric uncertainties and wind disturbance."
+    },
+    {
+      "name": "Disturbance Observer-Based Control for Trajectory Tracking of a Quadrotor Subject to Uncertainties",
+      "publisher": "Congresso Brasileiro de Automática (CBA)",
+      "releaseDate": "2022-01-01",
+      "summary": "Disturbance observer-based control for trajectory tracking of a quadrotor subject to uncertainties."
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
+      "name": "Programming Languages",
+      "level": "Expert",
+      "icon": "fa-solid fa-code",
+      "keywords": ["Python", "C++", "MATLAB"]
+    },
+    {
+      "name": "Robotics & Simulation",
+      "level": "Expert",
+      "icon": "fa-solid fa-robot",
+      "keywords": ["ROS2", "Gazebo", "NVIDIA Isaac Sim / Isaac Lab", "RViz"]
+    },
+    {
+      "name": "Motion Planning",
+      "icon": "fa-solid fa-route",
+      "keywords": ["A*", "RRT*", "OMPL", "octree/voxel-grid planners", "multi-resolution replanning", "behavior trees"]
+    },
+    {
+      "name": "Perception & State Estimation",
+      "icon": "fa-solid fa-eye",
+      "keywords": ["Open3D", "OpenCV", "point-cloud processing", "GTSAM (factor graphs)", "GNSS/IMU sensor fusion", "visual odometry"]
+    },
+    {
+      "name": "Control Systems",
+      "icon": "fa-solid fa-sliders",
+      "keywords": ["PID", "LQR", "MPC", "disturbance-observer-based robust control"]
+    },
+    {
+      "name": "Machine Learning",
+      "icon": "fa-solid fa-brain",
+      "keywords": ["Reinforcement Learning (PPO)", "PyTorch", "neural networks"]
+    },
+    {
+      "name": "Tools & Platforms",
+      "icon": "fa-solid fa-screwdriver-wrench",
+      "keywords": ["Linux", "Git", "SolidWorks", "Raspberry Pi", "Arduino"]
     }
   ],
   "languages": [
     {
-      "language": "German",
-      "fluency": "Native speaker",
+      "language": "English",
+      "fluency": "Fluent",
       "icon": ""
     },
     {
-      "language": "English",
-      "fluency": "Fluent",
+      "language": "Portuguese",
+      "fluency": "Native speaker",
       "icon": ""
     }
   ],
   "interests": [
     {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit."
+      "name": "Autonomous UAV Systems",
+      "icon": "fa-solid fa-drone",
+      "keywords": ["Motion Planning", "Coverage Planning", "Onboard Replanning", "Infrastructure Inspection"]
     },
     {
-      "name": "Professor Jane Smith",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit."
+      "name": "State Estimation",
+      "icon": "fa-solid fa-map-location-dot",
+      "keywords": ["Visual Odometry", "GNSS/IMU Fusion", "Factor Graphs", "GTSAM"]
+    },
+    {
+      "name": "Robot Learning",
+      "icon": "fa-solid fa-brain",
+      "keywords": ["Reinforcement Learning", "Next-Best-View Planning", "PPO", "NVIDIA Isaac Lab"]
     }
   ],
+  "references": [],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01"
+      "name": "XPRIZE Rainforest — Brazilian Team (Finalist)",
+      "summary": "Co-developed a ruggedized remotely-operated mobile robot for autonomous biodiversity sampling in tropical rainforests. Field campaigns in Brazil and Singapore.",
+      "highlights": ["International finalist", "Collaboration with biologists from Brazil and France"],
+      "startDate": "2023-05-01",
+      "endDate": "2024-01-01"
+    },
+    {
+      "name": "SARC–BARINet Aerospace Competition — Flying U2 Team (International Winner)",
+      "summary": "Designed and tuned cascaded UAV controllers (PID, LQR, MPC) for autonomous flight over water under high-wind disturbance. Validated in Gazebo and field trials.",
+      "highlights": ["International Winner", "Peer-reviewed publication"],
+      "startDate": "2019-08-01",
+      "endDate": "2021-12-01"
     }
   ]
 }
