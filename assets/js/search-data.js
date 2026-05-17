@@ -423,24 +423,24 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-multi-resolution-uav-path-replanning",
+          title: 'Multi-Resolution UAV Path Replanning',
+          description: "Real-time onboard replanning for autonomous inspection of tailings and coal-ash dams, with hazard detection and return-to-home logic.",
           section: "Projects",handler: () => {
               window.location.href = "/my-bio/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-photogrammetry-aware-coverage-planning",
+          title: 'Photogrammetry-Aware Coverage Planning',
+          description: "Flight plan generation enforcing GSD, image-overlap, row-spacing, and view-geometry constraints for high-fidelity 3D reconstruction of dams.",
           section: "Projects",handler: () => {
               window.location.href = "/my-bio/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-rl-based-next-best-view-planning",
+          title: 'RL-Based Next-Best-View Planning',
+          description: "Training PPO agents in NVIDIA Isaac Lab to learn autonomous next-best-view policies from raw point clouds under photogrammetric constraints.",
           section: "Projects",handler: () => {
               window.location.href = "/my-bio/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+            },},{id: "projects-xprize-rainforest-biodiversity-sampling-robot",
+          title: 'XPRIZE Rainforest — Biodiversity Sampling Robot',
+          description: "Ruggedized remotely-operated ground robot for autonomous biodiversity sampling in tropical rainforests. XPRIZE Finalist 2024.",
           section: "Projects",handler: () => {
               window.location.href = "/my-bio/projects/4_project/";
             },},{id: "projects-project-5",
