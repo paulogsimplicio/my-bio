@@ -438,9 +438,9 @@ ninja.data = [{
           description: "Combines offline A* planning on voxel grids with real-time octree-based replanning so a commercial UAV stays safe and on-mission over large mining structures.",
           section: "Projects",handler: () => {
               window.location.href = "/my-bio/projects/3_project/";
-            },},{id: "projects-xprize-rainforest-biodiversity-sampling-robot",
-          title: 'XPRIZE Rainforest — Biodiversity Sampling Robot',
-          description: "Ruggedized remotely-operated ground robot for autonomous biodiversity sampling in tropical rainforests. XPRIZE Finalist 2024.",
+            },},{id: "projects-a-behavior-tree-approach-for-battery-aware-inspection-of-large-structures-using-drones",
+          title: 'A Behavior Tree Approach for Battery-Aware Inspection of Large Structures Using Drones',
+          description: "A behavior tree framework that autonomously manages battery events during UAV inspection missions — returns home, waits for recharge, and resumes from where it left off.",
           section: "Projects",handler: () => {
               window.location.href = "/my-bio/projects/4_project/";
             },},{id: "projects-project-5",
