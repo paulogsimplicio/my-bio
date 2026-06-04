@@ -428,9 +428,9 @@ ninja.data = [{
           description: "Real-time onboard replanning for autonomous inspection of tailings and coal-ash dams, with hazard detection and return-to-home logic.",
           section: "Projects",handler: () => {
               window.location.href = "/my-bio/projects/1_project/";
-            },},{id: "projects-photogrammetry-aware-coverage-planning",
-          title: 'Photogrammetry-Aware Coverage Planning',
-          description: "Flight plan generation enforcing GSD, image-overlap, row-spacing, and view-geometry constraints for high-fidelity 3D reconstruction of dams.",
+            },},{id: "projects-photogrammetry-aware-coverage-planning-for-autonomous-dam-inspection",
+          title: 'Photogrammetry-Aware Coverage Planning for Autonomous Dam Inspection',
+          description: "Mission-planning algorithms that turn photogrammetry specs (GSD, overlap, view geometry) into collision-aware UAV flight paths for high-fidelity 3D maps of dams. Field-validated on a real water dam with a commercial drone.",
           section: "Projects",handler: () => {
               window.location.href = "/my-bio/projects/2_project/";
             },},{id: "projects-rl-based-next-best-view-planning",
