@@ -433,9 +433,9 @@ ninja.data = [{
           description: "Turns a photogrammetry spec into a flyable UAV trajectory that builds centimeter-accurate 3D maps of dams. Field-validated on a real dam.",
           section: "Projects",handler: () => {
               window.location.href = "/my-bio/projects/2_project/";
-            },},{id: "projects-rl-based-next-best-view-planning",
-          title: 'RL-Based Next-Best-View Planning',
-          description: "Training PPO agents in NVIDIA Isaac Lab to learn autonomous next-best-view policies from raw point clouds under photogrammetric constraints.",
+            },},{id: "projects-multi-resolution-uav-path-replanning-for-inspection-of-tailings-dams",
+          title: 'Multi-resolution UAV Path Replanning for Inspection of Tailings Dams',
+          description: "Combines offline A* planning on voxel grids with real-time octree-based replanning so a commercial UAV stays safe and on-mission over large mining structures.",
           section: "Projects",handler: () => {
               window.location.href = "/my-bio/projects/3_project/";
             },},{id: "projects-xprize-rainforest-biodiversity-sampling-robot",
