@@ -11,7 +11,7 @@ toc:
 
 <div class="text-center mt-n2 mb-3">
   <p class="mb-1" style="font-size:0.95rem;letter-spacing:0.03em">
-    P. V. G. Simplicio &middot; G. A. S. Pereira
+    <strong>P. V. G. Simplicio</strong> &middot; G. A. S. Pereira
   </p>
   <p class="text-muted mb-0" style="font-size:0.875rem">
     <em>ICUAS &mdash; Crete, Greece, 2024</em>
@@ -19,7 +19,7 @@ toc:
 </div>
 <hr style="border:none;border-top:2px solid var(--global-theme-color);opacity:0.45;margin-bottom:2rem">
 
-## TL;DR
+## Overview
 
 > **You tell it the smallest defect you need to see. It tells the drone exactly how to fly to capture it in 3D.** Field-tested on a real dam — resolved hazards as small as a soccer ball.
 
@@ -77,7 +77,7 @@ A planner that converts a **detection requirement** into a **flyable trajectory*
 
 **Core algorithm — waypoint generation.** Lays out the back-and-forth coverage path in the dam frame, then rotates it by the slope angle into the world frame so standoff stays constant on every row.
 
-<pre style="background:var(--global-bg-color);border:1px solid var(--global-theme-color);border-radius:6px;padding:1rem 1.25rem;font-size:0.85rem;line-height:1.8;overflow-x:auto"><b>Input:</b>  N, d<sub>s</sub>, d<sub>r</sub>, h, w<sub>d</sub>, θ, γ
+<pre style="background:var(--global-bg-color);border:1px solid var(--global-theme-color);border-radius:6px;padding:1rem 1.25rem;font-size:0.85rem;line-height:1.8;overflow-x:auto;font-weight:600"><b>Input:</b>  N, d<sub>s</sub>, d<sub>r</sub>, h, w<sub>d</sub>, θ, γ
 <b>Output:</b> <sup>w</sup>τ  (ordered set of waypoints <sup>w</sup>x, <sup>w</sup>y, <sup>w</sup>z)
 
 δ<sub>w</sub>(0) ← 0
