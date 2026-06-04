@@ -10,8 +10,8 @@ ninja.data = [{
       window.location.href = "/my-bio/";
     },
   },{id: "nav-projects",
-          title: "projects",
-          description: "A growing collection of your cool projects.",
+          title: "Projects",
+          description: "Projects I&#39;ve worked on.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/my-bio/projects/";
@@ -448,8 +448,8 @@ ninja.data = [{
           description: "Two DNN-augmented control architectures that keep a commercial quadrotor on track during trajectory following under real wind gusts — no wind sensor needed.",
           section: "Projects",handler: () => {
               window.location.href = "/my-bio/projects/5_project/";
-            },},{id: "projects-autonomous-multi-view-uav-inspection-via-reinforcement-learning-with-sim-to-real-validation",
-          title: 'Autonomous Multi-View UAV Inspection via Reinforcement Learning with Sim-to-Real Validation',
+            },},{id: "projects-sim-to-real-reinforcement-learning-for-autonomous-multi-view-uav-inspection",
+          title: 'Sim-to-Real Reinforcement Learning for Autonomous Multi-View UAV Inspection',
           description: "A complete RL-based framework that trains a PPO policy in simulation to select next-best viewpoints for multi-view inspection of industrial structures — deployed on a real UAV with zero hand-crafted rules.",
           section: "Projects",handler: () => {
               window.location.href = "/my-bio/projects/6_project/";
