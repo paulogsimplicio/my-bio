@@ -423,12 +423,7 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-multi-resolution-uav-path-replanning",
-          title: 'Multi-Resolution UAV Path Replanning',
-          description: "Real-time onboard replanning for autonomous inspection of tailings and coal-ash dams, with hazard detection and return-to-home logic.",
-          section: "Projects",handler: () => {
-              window.location.href = "/my-bio/projects/1_project/";
-            },},{id: "projects-photogrammetry-aware-coverage-planning-for-autonomous-dam-inspection",
+          section: "News",},{id: "projects-photogrammetry-aware-coverage-planning-for-autonomous-dam-inspection",
           title: 'Photogrammetry-Aware Coverage Planning for Autonomous Dam Inspection',
           description: "Turns a photogrammetry spec into a flyable UAV trajectory that builds centimeter-accurate 3D maps of dams. Field-validated on a real dam.",
           section: "Projects",handler: () => {
@@ -450,7 +445,7 @@ ninja.data = [{
               window.location.href = "/my-bio/projects/5_project/";
             },},{id: "projects-sim-to-real-reinforcement-learning-for-autonomous-multi-view-uav-inspection",
           title: 'Sim-to-Real Reinforcement Learning for Autonomous Multi-View UAV Inspection',
-          description: "A complete RL-based framework that trains a PPO policy in simulation to select next-best viewpoints for multi-view inspection of industrial structures — deployed on a real UAV with zero hand-crafted rules.",
+          description: "A complete RL-based framework that trains a PPO policy in simulation to select next-best viewpoints for multi-view inspection of industrial structures, deployed on a real UAV with zero hand-crafted rules.",
           section: "Projects",handler: () => {
               window.location.href = "/my-bio/projects/6_project/";
             },},{id: "teachings-data-science-fundamentals",
