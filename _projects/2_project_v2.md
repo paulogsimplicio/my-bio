@@ -2,7 +2,7 @@
 layout: page
 title: "Photogrammetry-Aware Coverage Planning for Autonomous Dam Inspection [v2]"
 description: Turns a photogrammetry spec into a flyable UAV trajectory that builds centimeter-accurate 3D maps of dams. Field-validated on a real dam.
-img: assets/img/projects/2_project/thumbnail.jpg
+img: assets/img/projects/2_project/thumbnail.png
 importance: 3
 category: work
 toc:
@@ -13,7 +13,7 @@ toc:
 
 > **You tell it the smallest defect you need to see. It tells the drone exactly how to fly to capture it in 3D.** Field-tested on a real dam — resolved hazards as small as a soccer ball.
 
-{% include figure.liquid loading="eager" path="assets/img/projects/2_project/hero_dam_with_trajectory.jpg" class="img-fluid rounded z-depth-1" caption="Real dam, real drone, planned trajectory overlaid on the slope." %}
+{% include figure.liquid loading="eager" path="assets/img/projects/2_project/hero_dam_with_trajectory.png" class="img-fluid rounded z-depth-1" caption="Real dam, real drone, planned trajectory overlaid on the slope." %}
 
 
 ## Problem
@@ -67,10 +67,10 @@ A planner that converts a **detection requirement** into a **flyable trajectory*
 
 <div class="row">
   <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/projects/2_project/hazards_long_range.jpg" class="img-fluid rounded z-depth-1" caption="Long-range — hazards visible." %}
+    {% include figure.liquid path="assets/img/projects/2_project/hazards_long_range.png" class="img-fluid rounded z-depth-1" caption="Long-range — hazards visible." %}
   </div>
   <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/projects/2_project/hazards_detailed.jpg" class="img-fluid rounded z-depth-1" caption="Detailed — denser, sharper." %}
+    {% include figure.liquid path="assets/img/projects/2_project/hazards_detailed.png" class="img-fluid rounded z-depth-1" caption="Detailed — denser, sharper." %}
   </div>
 </div>
 
