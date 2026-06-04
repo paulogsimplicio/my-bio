@@ -443,9 +443,9 @@ ninja.data = [{
           description: "A behavior tree framework that autonomously manages battery events during UAV inspection missions — returns home, waits for recharge, and resumes from where it left off.",
           section: "Projects",handler: () => {
               window.location.href = "/my-bio/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
+            },},{id: "projects-robust-and-intelligent-control-of-quadrotors-subject-to-wind-gusts",
+          title: 'Robust and Intelligent Control of Quadrotors Subject to Wind Gusts',
+          description: "Two DNN-augmented control architectures that keep a commercial quadrotor on track during trajectory following under real wind gusts — no wind sensor needed.",
           section: "Projects",handler: () => {
               window.location.href = "/my-bio/projects/5_project/";
             },},{id: "projects-project-6",
