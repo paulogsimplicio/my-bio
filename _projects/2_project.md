@@ -65,14 +65,7 @@ A planner that converts a **detection requirement** into a **flyable trajectory*
   </div>
 </div>
 
-<div class="row">
-  <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/projects/2_project/hazards_long_range.png" class="img-fluid rounded z-depth-1" caption="Long-range — hazards visible." %}
-  </div>
-  <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/projects/2_project/hazards_detailed.png" class="img-fluid rounded z-depth-1" caption="Detailed — denser, sharper." %}
-  </div>
-</div>
+{% include figure.liquid path="assets/img/projects/2_project/Figure_1_2.png" class="img-fluid rounded z-depth-1" caption="Long-range (left) vs. detailed (right) — hazards visible in both; detailed cloud is denser and sharper." %}
 
 - All planted hazards recoverable in the dense cloud.
 - Differencing against a clean baseline auto-highlights new hazards &rarr; change monitoring.
