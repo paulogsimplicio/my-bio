@@ -110,9 +110,6 @@ The final rotation `rot_{x,γ}` about the x-axis is the key step — it tilts th
 - Swept resolution from long-range to detailed to map quality-vs-time.
 - Planted known hazards (box + 2 soccer balls) to test what the cloud resolves.
 
-{% include video.liquid path="https://www.youtube.com/embed/SuqJXi0uRdk" class="img-fluid rounded z-depth-1" caption="Field experiment + 3D reconstruction." %}
-
-
 ## Results
 
 <div class="row text-center">
@@ -156,3 +153,7 @@ The final rotation `rot_{x,γ}` about the x-axis is the key step — it tilts th
 
 P. V. G. Simplicio, G. A. S. Pereira, *"Mission Planning for Photogrammetry-Based Autonomous 3D Mapping of Dams Using a Commercial UAV,"* ICUAS 2024.
 [PDF]({{ '/assets/pdf/icuas2024_dam_photogrammetry.pdf' | relative_url }}) &middot; [Video](https://youtu.be/SuqJXi0uRdk)
+
+<div class="embed-responsive embed-responsive-16by9 rounded z-depth-1 mt-3">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SuqJXi0uRdk" allowfullscreen></iframe>
+</div>
