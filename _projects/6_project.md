@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Autonomous Multi-View UAV Inspection via Reinforcement Learning with Sim-to-Real Validation
+title: Sim-to-Real Reinforcement Learning for Autonomous Multi-View UAV Inspection
 description: A complete RL-based framework that trains a PPO policy in simulation to select next-best viewpoints for multi-view inspection of industrial structures — deployed on a real UAV with zero hand-crafted rules.
 img: assets/img/projects/6_project/thumbnail.png
 importance: 5
