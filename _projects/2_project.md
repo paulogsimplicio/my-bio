@@ -9,6 +9,16 @@ toc:
   sidebar: left
 ---
 
+<div class="text-center mt-n2 mb-3">
+  <p class="mb-1" style="font-size:0.95rem;letter-spacing:0.03em">
+    P. V. G. Simplicio &middot; G. A. S. Pereira
+  </p>
+  <p class="text-muted mb-0" style="font-size:0.875rem">
+    <em>ICUAS &mdash; Crete, Greece, 2024</em>
+  </p>
+</div>
+<hr style="border:none;border-top:2px solid var(--global-theme-color);opacity:0.45;margin-bottom:2rem">
+
 ## TL;DR
 
 > **You tell it the smallest defect you need to see. It tells the drone exactly how to fly to capture it in 3D.** Field-tested on a real dam — resolved hazards as small as a soccer ball.
