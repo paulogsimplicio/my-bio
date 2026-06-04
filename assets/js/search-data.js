@@ -433,6 +433,11 @@ ninja.data = [{
           description: "Mission-planning algorithms that turn photogrammetry specs (GSD, overlap, view geometry) into collision-aware UAV flight paths for high-fidelity 3D maps of dams. Field-validated on a real water dam with a commercial drone.",
           section: "Projects",handler: () => {
               window.location.href = "/my-bio/projects/2_project/";
+            },},{id: "projects-photogrammetry-aware-coverage-planning-for-autonomous-dam-inspection-v2",
+          title: 'Photogrammetry-Aware Coverage Planning for Autonomous Dam Inspection [v2]',
+          description: "Turns a photogrammetry spec into a flyable UAV trajectory that builds centimeter-accurate 3D maps of dams. Field-validated on a real dam.",
+          section: "Projects",handler: () => {
+              window.location.href = "/my-bio/projects/2_project_v2/";
             },},{id: "projects-rl-based-next-best-view-planning",
           title: 'RL-Based Next-Best-View Planning',
           description: "Training PPO agents in NVIDIA Isaac Lab to learn autonomous next-best-view policies from raw point clouds under photogrammetric constraints.",
