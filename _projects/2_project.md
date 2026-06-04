@@ -2,7 +2,7 @@
 layout: page
 title: Photogrammetry-Aware Coverage Planning for Autonomous Dam Inspection
 description: Mission-planning algorithms that turn photogrammetry specs (GSD, overlap, view geometry) into collision-aware UAV flight paths for high-fidelity 3D maps of dams. Field-validated on a real water dam with a commercial drone.
-img: assets/img/projects/2_project/thumbnail.jpg
+img: assets/img/projects/2_project/thumbnail.png
 importance: 1
 category: work
 related_publications: false
