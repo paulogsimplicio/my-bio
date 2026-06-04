@@ -438,6 +438,11 @@ ninja.data = [{
           description: "Turns a photogrammetry spec into a flyable UAV trajectory that builds centimeter-accurate 3D maps of dams. Field-validated on a real dam.",
           section: "Projects",handler: () => {
               window.location.href = "/my-bio/projects/2_project_v2/";
+            },},{id: "projects-autonomous-dam-inspection-3d-maps-from-a-commercial-drone",
+          title: 'Autonomous Dam Inspection — 3D maps from a commercial drone',
+          description: "Plans a UAV mission that builds a centimeter-accurate 3D map of a dam, good enough to find hazards. Validated on a real dam.",
+          section: "Projects",handler: () => {
+              window.location.href = "/my-bio/projects/2_project_v3/";
             },},{id: "projects-rl-based-next-best-view-planning",
           title: 'RL-Based Next-Best-View Planning',
           description: "Training PPO agents in NVIDIA Isaac Lab to learn autonomous next-best-view policies from raw point clouds under photogrammetric constraints.",
