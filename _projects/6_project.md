@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sim-to-Real Reinforcement Learning for Autonomous Multi-View UAV Inspection
-description: A complete RL-based framework that trains a PPO policy in simulation to select next-best viewpoints for multi-view inspection of industrial structures — deployed on a real UAV with zero hand-crafted rules.
+description: A complete RL-based framework that trains a PPO policy in simulation to select next-best viewpoints for multi-view inspection of industrial structures, deployed on a real UAV with zero hand-crafted rules.
 img: assets/img/projects/6_project/thumbnail.png
 importance: 5
 category: work
@@ -22,7 +22,7 @@ toc:
 
 ## Overview
 
-> **Predefined patterns can't see around corners. This RL policy learns to inspect like an expert — adapting to any geometry, satisfying photogrammetric constraints, and deploying directly to a real drone with zero hand-crafted rules.** Best coverage across all 8 methods tested; 33.92% shorter path than the best baseline.
+> **Predefined patterns can't see around corners. This RL policy learns to inspect like an expert, adapting to different structures and geometries, satisfying photogrammetric constraints, and used by a a real UAV with zero hand-crafted rules.** Best coverage across all 8 methods tested; 33.92% shorter path than the best baseline.
 
 {% include figure.liquid loading="eager" path="assets/img/projects/6_project/framework.png" class="img-fluid rounded z-depth-1" caption="Full inspection framework: a PPO policy selects next-best viewpoints from the environment representation; a TSP solver orders them; A* generates the collision-free path; ROS executes the flight." %}
 
@@ -30,7 +30,7 @@ toc:
 ## Problem
 
 - Critical infrastructure requires regular inspection; manual surveys are costly and hazardous.
-- Predefined patterns (spirals, lawnmowers) assume uniform geometry — they miss occluded surfaces and fail to generalize across structure types.
+- Predefined patterns (spirals, lawnmowers) assume uniform geometry, they miss occluded surfaces and fail to generalize across structure types.
 - No prior work validates a complete learning-based viewpoint selection pipeline on a fully autonomous UAV.
 
 
@@ -77,7 +77,7 @@ A complete RL-based inspection pipeline, from sim training to real-world UAV dep
 
 {% include figure.liquid path="assets/img/projects/6_project/mdp.png" class="img-fluid rounded z-depth-1" caption="MDP formulation: the PPO agent observes the voxel grid state and historic poses, acts by selecting next-best viewpoints, and is rewarded by the multiview coverage gain ΔQ." %}
 
-**MDP formulation.** The viewpoint selection problem is cast as a Markov Decision Process where the agent iteratively builds an inspection plan maximising multi-view coverage:
+**MDP formulation.** The viewpoint selection problem is cast as a Markov Decision Process where the agent iteratively builds an inspection plan maximizing multi-view coverage:
 
 <pre style="background:var(--global-bg-color);border:1px solid var(--global-theme-color);border-radius:6px;padding:1rem 1.25rem;font-size:0.85rem;line-height:1.8;overflow-x:auto;font-weight:600"><b>State</b>   S = { H, V<sub>prev</sub>, ΔQ<sub>i</sub> }
          H        — voxel occupancy &amp; coverage history
@@ -95,13 +95,13 @@ A view ν<sub>t</sub>(v) counts for voxel v <b>only if all three hold:</b>
   ✓  GSD range         — distance within valid photogrammetry zone
   ✓  Angular diversity  — incidence angle θ ≤ 10° from surface normal</pre>
 
-{% include figure.liquid path="assets/img/projects/6_project/training.png" class="img-fluid rounded z-depth-1" caption="Training (top): PPO agent learns across diverse simulated structures. Inference (bottom): the policy selects progressively better viewpoints — from 1 to 30, coverage improves and views per voxel increase." %}
+{% include figure.liquid path="assets/img/projects/6_project/training.png" class="img-fluid rounded z-depth-1" caption="Training (top): PPO agent learns across diverse simulated structures. Inference (bottom): the policy selects progressively better viewpoints (from 1 to 30), coverage improves and views per voxel increase." %}
 
 
 ## Experiments
 
 - **Simulation:** 8 methods compared (random sampling, uniform hemisphere, POI circle, spiral, lawnmower, and ours) across multiple structure geometries in Isaac Lab.
-- **Real deployment:** policy transferred zero-shot to a physical UAV (Olympe SDK + ROS 2) on an actual industrial structure — no parameter tuning.
+- **Real deployment:** policy transferred zero-shot to a physical UAV (Olympe SDK + ROS 2) on an actual industrial structure, no parameter tuning.
 - **Generalization:** tested on structures with different geometries without changing the policy or architecture.
 
 {% include figure.liquid path="assets/img/projects/6_project/deployment.png" class="img-fluid rounded z-depth-1" caption="Deployment platform: the RL policy output feeds a ground control station (ROS 2 + Olympe SDK) that commands the physical drone, closing the sim-to-real loop." %}
@@ -114,11 +114,11 @@ A view ν<sub>t</sub>(v) counts for voxel v <b>only if all three hold:</b>
 <div class="row text-center">
   <div class="col-4">
     <h3 style="margin-bottom:0">96.16%</h3>
-    <p class="text-muted">C1 coverage on a real structure — best across all 8 methods</p>
+    <p class="text-muted">C1 coverage on a real structure. Best across all 8 methods</p>
   </div>
   <div class="col-4">
     <h3 style="margin-bottom:0">89.10%</h3>
-    <p class="text-muted">C2 triple-redundancy — guaranteed reconstruction quality</p>
+    <p class="text-muted">C2 triple-redundancy. Guaranteed reconstruction quality</p>
   </div>
   <div class="col-4">
     <h3 style="margin-bottom:0">33.92%</h3>
@@ -135,8 +135,8 @@ A view ν<sub>t</sub>(v) counts for voxel v <b>only if all three hold:</b>
 ## Lessons learned
 
 - A learned policy naturally discovers occlusion-aware viewpoints that fixed patterns systematically miss.
-- The multi-view coverage metric (GSD + angular diversity + hit) is the key supervision signal — it encodes photogrammetric quality directly into the reward.
-- Sim-to-real transfer requires diverse training environments, not domain randomization of physics — geometry variety is what generalises.
+- The multi-view coverage metric (GSD + angular diversity + hit) is the key supervision signal, it encodes photogrammetric quality directly into the reward.
+- Sim-to-real transfer requires diverse training environments, not domain randomization of physics, geometry variety is what generalises.
 
 
 ## Stack & role
@@ -148,5 +148,5 @@ A view ν<sub>t</sub>(v) counts for voxel v <b>only if all three hold:</b>
 
 ## Reference
 
-P. V. G. Simplicio, G. A. S. Pereira, *"Autonomous Multi-View UAV Inspection via Reinforcement Learning with Sim-to-Real Validation,"* West Virginia University — Field and Aerial Robotics Laboratory.
+P. V. G. Simplicio, G. A. S. Pereira, *"Sim-to-Real Reinforcement Learning for Autonomous Multi-View UAV Inspection,"* West Virginia University — Field and Aerial Robotics Laboratory.
 [PDF]({{ '/assets/pdf/RL_Policy.pdf' | relative_url }})
