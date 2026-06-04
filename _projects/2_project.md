@@ -5,6 +5,7 @@ description: Turns a photogrammetry spec into a flyable UAV trajectory that buil
 img: assets/img/projects/2_project/thumbnail.png
 importance: 1
 category: work
+selected: true
 toc:
   sidebar: left
 ---

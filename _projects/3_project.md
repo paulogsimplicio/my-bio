@@ -5,6 +5,7 @@ description: Combines offline A* planning on voxel grids with real-time octree-b
 img: assets/img/projects/3_project/thumbnail.jpg
 importance: 2
 category: work
+selected: true
 toc:
   sidebar: left
 ---

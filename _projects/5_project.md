@@ -5,6 +5,7 @@ description: Two DNN-augmented control architectures that keep a commercial quad
 img: assets/img/projects/5_project/thumbnail.png
 importance: 4
 category: work
+selected: true
 toc:
   sidebar: left
 ---

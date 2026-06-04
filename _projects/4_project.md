@@ -5,6 +5,7 @@ description: A behavior tree framework that autonomously manages battery events 
 img: assets/img/projects/4_project/thumbnail.png
 importance: 3
 category: work
+selected: true
 toc:
   sidebar: left
 ---
