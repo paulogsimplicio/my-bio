@@ -34,9 +34,64 @@ A planner that converts a **detection requirement** into a **flyable trajectory*
 
 ## How it works
 
-{% include figure.liquid path="assets/img/projects/2_project/pipeline.svg" class="img-fluid rounded z-depth-1" caption="Detection need → resolution → flight geometry → waypoints → fly & reconstruct." %}
+<figure>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 110" style="width:100%;display:block">
+    <defs>
+      <marker id="pipeline-arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+        <polygon points="0 0, 8 3, 0 6" fill="var(--global-theme-color)"/>
+      </marker>
+    </defs>
+    <!-- Boxes -->
+    <rect x="20"  y="22" width="140" height="64" rx="6" fill="var(--global-bg-color)" stroke="var(--global-theme-color)" stroke-width="2"/>
+    <rect x="190" y="22" width="140" height="64" rx="6" fill="var(--global-bg-color)" stroke="var(--global-theme-color)" stroke-width="2"/>
+    <rect x="360" y="22" width="140" height="64" rx="6" fill="var(--global-bg-color)" stroke="var(--global-theme-color)" stroke-width="2"/>
+    <rect x="530" y="22" width="140" height="64" rx="6" fill="var(--global-bg-color)" stroke="var(--global-theme-color)" stroke-width="2"/>
+    <rect x="700" y="22" width="140" height="64" rx="6" fill="var(--global-bg-color)" stroke="var(--global-theme-color)" stroke-width="2"/>
+    <!-- Arrows -->
+    <line x1="162" y1="54" x2="188" y2="54" stroke="var(--global-theme-color)" stroke-width="2" marker-end="url(#pipeline-arr)"/>
+    <line x1="332" y1="54" x2="358" y2="54" stroke="var(--global-theme-color)" stroke-width="2" marker-end="url(#pipeline-arr)"/>
+    <line x1="502" y1="54" x2="528" y2="54" stroke="var(--global-theme-color)" stroke-width="2" marker-end="url(#pipeline-arr)"/>
+    <line x1="672" y1="54" x2="698" y2="54" stroke="var(--global-theme-color)" stroke-width="2" marker-end="url(#pipeline-arr)"/>
+    <!-- Labels -->
+    <text x="90"  y="54" dominant-baseline="central" text-anchor="middle" font-size="13" font-weight="600" font-family="sans-serif" fill="var(--global-text-color)">Detection Need</text>
+    <text x="260" y="54" dominant-baseline="central" text-anchor="middle" font-size="13" font-weight="600" font-family="sans-serif" fill="var(--global-text-color)">Resolution</text>
+    <text x="430" y="54" dominant-baseline="central" text-anchor="middle" font-size="13" font-weight="600" font-family="sans-serif" fill="var(--global-text-color)">Flight Geometry</text>
+    <text x="600" y="54" dominant-baseline="central" text-anchor="middle" font-size="13" font-weight="600" font-family="sans-serif" fill="var(--global-text-color)">Waypoints</text>
+    <text x="770" y="45" dominant-baseline="central" text-anchor="middle" font-size="13" font-weight="600" font-family="sans-serif" fill="var(--global-text-color)">Fly &amp;</text>
+    <text x="770" y="63" dominant-baseline="central" text-anchor="middle" font-size="13" font-weight="600" font-family="sans-serif" fill="var(--global-text-color)">Reconstruct</text>
+  </svg>
+  <figcaption class="caption">Detection need → resolution → flight geometry → waypoints → fly &amp; reconstruct.</figcaption>
+</figure>
 
 {% include figure.liquid path="assets/img/projects/2_project/geometry_trapezoid.png" class="img-fluid rounded z-depth-1" caption="Slope modeled as a trapezoid; path is rotated by the slope angle to keep standoff constant across rows." %}
+
+**Core algorithm — waypoint generation.** Lays out the back-and-forth coverage path in the dam frame, then rotates it by the slope angle into the world frame so standoff stays constant on every row.
+
+{% highlight text linenos %}
+Input:  N, d_s, d_r, h, w_d, θ, γ
+Output: ^wτ  (ordered set of waypoints ^wx, ^wy, ^wz)
+
+δ_w(0) ← 0
+^dx(0) ← 0
+^dy(0) ← ( h − d_r·(N−1) ) / 2
+^dz(0) ← d_s
+X ← ^dx(0),  Y ← ^dy(0),  Z ← ^dz(0)
+
+for k = 0 to N do
+    if k is even:
+        X ← X ∪ [ ^dx(0)+δ(k),  ^dx(0)−w_d−δ(k) ]
+    else:
+        X ← X ∪ [ ^dx(0)−w_d−δ(k),  ^dx(0)+δ(k) ]
+    Y ← Y ∪ [ ^dy(0)+k·d_r,  ^dy(0)+k·d_r ]
+    Z ← Z ∪ [ ^dz(0),  ^dz(0) ]
+    δ_w(k+1) ← δ_w(k) + tan(θ)·d_r
+end for
+
+^wτ ← rot_{x,γ}( [X, Y, Z] )
+return ^wτ
+{% endhighlight %}
+
+The final rotation `rot_{x,γ}` about the x-axis is the key step — it tilts the planar path onto the dam's slope, holding camera-to-slope distance fixed so resolution is uniform across the whole map.
 
 
 ## Experiments
@@ -66,6 +121,8 @@ A planner that converts a **detection requirement** into a **flyable trajectory*
 </div>
 
 {% include figure.liquid path="assets/img/projects/2_project/Figure_1_2.png" class="img-fluid rounded z-depth-1" caption="Long-range (left) vs. detailed (right) — hazards visible in both; detailed cloud is denser and sharper." %}
+
+{% include figure.liquid path="assets/img/projects/2_project/registration.png" class="img-fluid rounded z-depth-1" caption="Hazards picked out automatically: a clean baseline cloud differenced against a cloud with planted hazards (detailed mission, GSD 1.40 cm/px). The highlighted regions are the detected hazards." %}
 
 - All planted hazards recoverable in the dense cloud.
 - Differencing against a clean baseline auto-highlights new hazards &rarr; change monitoring.
