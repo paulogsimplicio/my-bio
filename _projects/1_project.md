@@ -3,7 +3,7 @@ layout: page
 title: Multi-Resolution UAV Path Replanning
 description: Real-time onboard replanning for autonomous inspection of tailings and coal-ash dams, with hazard detection and return-to-home logic.
 img: assets/img/1.jpg
-importance: 1
+importance: 2
 category: research
 selected: true
 ---
