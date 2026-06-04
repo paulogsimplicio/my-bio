@@ -23,7 +23,7 @@ toc:
 
 > **Standard controllers drift when wind hits. A DNN trained on real flight data steers the controller back on track — no wind sensor required.** Two architectures tested on a commercial Parrot Bebop 2.0 under gusts up to 20.5 m/s; both improve every controller by up to 21%.
 
-{% include figure.liquid loading="eager" path="assets/img/projects/5_project/experiment.png" class="img-fluid rounded z-depth-1" caption="Parrot Bebop 2.0 flying under wing-generated wind gusts in the experimental arena, with Vicon markers for motion capture." %}
+{% include figure.liquid loading="eager" path="assets/img/projects/5_project/experiment.jpg" class="img-fluid rounded z-depth-1" caption="Parrot Bebop 2.0 flying under wing-generated wind gusts in the experimental arena, with Vicon markers for motion capture." %}
 
 
 ## Problem
