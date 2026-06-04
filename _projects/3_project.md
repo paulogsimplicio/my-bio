@@ -2,7 +2,7 @@
 layout: page
 title: Multi-resolution UAV Path Replanning for Inspection of Tailings Dams
 description: Combines offline A* planning on voxel grids with real-time octree-based replanning so a commercial UAV stays safe and on-mission over large mining structures.
-img: assets/img/projects/3_project/thumbnail.png
+img: assets/img/projects/3_project/thumbnail.jpg
 importance: 2
 category: work
 toc:
@@ -23,7 +23,7 @@ toc:
 
 > **You give it a sparse point cloud. It plans a photogrammetry-quality path — and replans in milliseconds when the drone hits an obstacle or needs to return home.** Validated on a real 205,000 m² coal mine tailings dam; octree replanning is up to 2.62× faster than voxel-grid methods.
 
-{% include figure.liquid loading="eager" path="assets/img/projects/3_project/framework.png" class="img-fluid rounded z-depth-1" caption="Integrated planning framework: offline global coverage path (solid line) plus online octree-based replanning triggered by battery events or obstacle detections." %}
+{% include figure.liquid loading="eager" path="assets/img/projects/3_project/framework.jpg" class="img-fluid rounded z-depth-1" caption="Integrated planning framework: offline global coverage path (solid line) plus online octree-based replanning triggered by battery events or obstacle detections." %}
 
 
 ## Problem
@@ -73,7 +73,7 @@ A two-layer motion planner for commercial UAVs inspecting large slopes.
   <figcaption class="caption">Sparse cloud → plane segmentation &amp; voxelization → global A* path → collision check → online octree replanning.</figcaption>
 </figure>
 
-{% include figure.liquid path="assets/img/projects/3_project/preprocessing.png" class="img-fluid rounded z-depth-1" caption="Preprocessing: sparse point cloud decomposed into a voxel grid, an octree, and the dominant inspection plane used to align the coverage path." %}
+{% include figure.liquid path="assets/img/projects/3_project/preprocessing.jpg" class="img-fluid rounded z-depth-1" caption="Preprocessing: sparse point cloud decomposed into a voxel grid, an octree, and the dominant inspection plane used to align the coverage path." %}
 
 **Algorithm 1 — global path planning on a voxel grid.** Detects collisions along the pre-planned path and uses A* locally to reroute around each obstacle, then post-processes the result to remove unnecessary waypoints.
 
@@ -127,9 +127,13 @@ The key insight: at each layer the search is restricted to the tunnel 𝒯<sub>l
 - Commercial UAV: Parrot Anafi USA Gov, flying at 30 m standoff from the slope.
 - Ran 8 missions with varying start/goal positions; compared voxel-grid vs. octree replanning times.
 
+{% include figure.liquid path="assets/img/projects/3_project/tailing_dam_astar.png" class="img-fluid rounded z-depth-1" caption="Global inspection path planned over the tailings dam voxel grid, satisfying photogrammetry constraints with 31 coverage lines at 1.2 cm/px GSD." %}
+
 {% include figure.liquid path="assets/img/projects/3_project/voxel_path.png" class="img-fluid rounded z-depth-1" caption="A* path planning over the voxel grid: raw output (left) and post-processed path with unnecessary waypoints removed (right)." %}
 
 {% include figure.liquid path="assets/img/projects/3_project/octree_layers.png" class="img-fluid rounded z-depth-1" caption="Multi-resolution path refinement across 9 octree layers — coarse layers provide a fast initial route; finer layers progressively sharpen it." %}
+
+{% include figure.liquid path="assets/img/projects/3_project/octree_result.jpg" class="img-fluid rounded z-depth-1" caption="Final path computed online by the A* algorithm over the voxel grid, matching the finest octree layer — obstacles avoided while preserving the inspection route." %}
 
 
 ## Results
@@ -149,7 +153,7 @@ The key insight: at each layer the search is restricted to the tunnel 𝒯<sub>l
   </div>
 </div>
 
-{% include figure.liquid path="assets/img/projects/3_project/map_result.png" class="img-fluid rounded z-depth-1" caption="High-resolution 3D map of the tailings dam generated through the photogrammetry-based autonomous mission, enabling structural deformation analysis and hazard monitoring." %}
+{% include figure.liquid path="assets/img/projects/3_project/map_result.jpg" class="img-fluid rounded z-depth-1" caption="High-resolution 3D map of the tailings dam generated through the photogrammetry-based autonomous mission, enabling structural deformation analysis and hazard monitoring." %}
 
 - Octree outperformed the voxel grid in all 8 missions (1.41× – 2.62×).
 - Multi-resolution hierarchical search reduces nodes processed without sacrificing path quality.
