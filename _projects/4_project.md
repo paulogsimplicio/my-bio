@@ -2,7 +2,7 @@
 layout: page
 title: A Behavior Tree Approach for Battery-Aware Inspection of Large Structures Using Drones
 description: A behavior tree framework that autonomously manages battery events during UAV inspection missions — returns home, waits for recharge, and resumes from where it left off.
-img: assets/img/projects/4_project/thumbnail.pdf
+img: assets/img/projects/4_project/thumbnail.png
 importance: 3
 category: work
 toc:
@@ -23,7 +23,7 @@ toc:
 
 > **The drone runs out of battery mid-inspection. Instead of waiting for a human to intervene, it lands, waits for a battery swap, and picks up exactly where it stopped — fully autonomously.** Field-validated on a real coal ash pit using a commercial quadrotor.
 
-{% include figure.liquid loading="eager" path="assets/img/projects/4_project/hero.pdf" class="img-fluid rounded z-depth-1" caption="Inspection mission over a tailings dam: blue path flown before the low-battery event, red path resumed automatically after battery replacement." %}
+{% include figure.liquid loading="eager" path="assets/img/projects/4_project/hero.png" class="img-fluid rounded z-depth-1" caption="Inspection mission over a tailings dam: blue path flown before the low-battery event, red path resumed automatically after battery replacement." %}
 
 
 ## Problem
@@ -72,7 +72,7 @@ A behavior tree (BT) that makes battery management a first-class mission behavio
   <figcaption class="caption">State update → pre-flight checks → battery emergency handler → return &amp; recharge → resume from last waypoint.</figcaption>
 </figure>
 
-{% include figure.liquid path="assets/img/projects/4_project/behavior_tree.pdf" class="img-fluid rounded z-depth-1" caption="Proposed Behavior Tree. The parallel root ticks state-update nodes and the mission sequence simultaneously at 1 Hz. The battery emergency sub-tree preempts normal navigation whenever charge drops below threshold." %}
+{% include figure.liquid path="assets/img/projects/4_project/behavior_tree.png" class="img-fluid rounded z-depth-1" caption="Proposed Behavior Tree. The parallel root ticks state-update nodes and the mission sequence simultaneously at 1 Hz. The battery emergency sub-tree preempts normal navigation whenever charge drops below threshold." %}
 
 **Behavior tree structure.** The root parallel node runs state updates and the mission concurrently. The mission sequence handles pre-flight once (OneShot), then loops through in-flight tasks via a priority selector:
 
@@ -97,7 +97,7 @@ A behavior tree (BT) that makes battery management a first-class mission behavio
         │   ├── PopGoal → MoveToGoal
         └── IdleFlying</pre>
 
-{% include figure.liquid path="assets/img/projects/4_project/architecture.pdf" class="img-fluid rounded z-depth-1" caption="Control architecture: the BT Manager requests waypoints from the Path Planner and commands the drone through a ROS 2 bridge, reacting to live battery and state feedback." %}
+{% include figure.liquid path="assets/img/projects/4_project/architecture.png" class="img-fluid rounded z-depth-1" caption="Control architecture: the BT Manager requests waypoints from the Path Planner and commands the drone through a ROS 2 bridge, reacting to live battery and state feedback." %}
 
 
 ## Experiments
@@ -149,4 +149,4 @@ A behavior tree (BT) that makes battery management a first-class mission behavio
 ## Reference
 
 B. M. Rocamora Jr., P. V. G. Simplicio, G. A. S. Pereira, *"A Behavior Tree Approach for Battery-Aware Inspection of Large Structures Using Drones,"* ICUAS 2024.
-[PDF]({{ '/assets/pdf/A_Behavior_Tree_Approach_for_Battery-Aware_Inspection_of_Large_Structures_Using_Drones.pdf' | relative_url }})
+[PDF]({{ '/assets/pdf/A_Behavior_Tree_Approach_for_Battery-Aware_Inspection_of_Large_Structures_Using_Drones.png' | relative_url }})
