@@ -77,29 +77,27 @@ A planner that converts a **detection requirement** into a **flyable trajectory*
 
 **Core algorithm — waypoint generation.** Lays out the back-and-forth coverage path in the dam frame, then rotates it by the slope angle into the world frame so standoff stays constant on every row.
 
-{% highlight text linenos %}
-Input:  N, d_s, d_r, h, w_d, θ, γ
-Output: ^wτ  (ordered set of waypoints ^wx, ^wy, ^wz)
+<pre style="background:var(--global-bg-color);border:1px solid var(--global-theme-color);border-radius:6px;padding:1rem 1.25rem;font-size:0.85rem;line-height:1.8;overflow-x:auto"><b>Input:</b>  N, d<sub>s</sub>, d<sub>r</sub>, h, w<sub>d</sub>, θ, γ
+<b>Output:</b> <sup>w</sup>τ  (ordered set of waypoints <sup>w</sup>x, <sup>w</sup>y, <sup>w</sup>z)
 
-δ_w(0) ← 0
-^dx(0) ← 0
-^dy(0) ← ( h − d_r·(N−1) ) / 2
-^dz(0) ← d_s
-X ← ^dx(0),  Y ← ^dy(0),  Z ← ^dz(0)
+δ<sub>w</sub>(0) ← 0
+<sup>d</sup>x(0) ← 0
+<sup>d</sup>y(0) ← ( h − d<sub>r</sub>·(N−1) ) / 2
+<sup>d</sup>z(0) ← d<sub>s</sub>
+X ← <sup>d</sup>x(0),  Y ← <sup>d</sup>y(0),  Z ← <sup>d</sup>z(0)
 
-for k = 0 to N do
-    if k is even:
-        X ← X ∪ [ ^dx(0)+δ(k),  ^dx(0)−w_d−δ(k) ]
-    else:
-        X ← X ∪ [ ^dx(0)−w_d−δ(k),  ^dx(0)+δ(k) ]
-    Y ← Y ∪ [ ^dy(0)+k·d_r,  ^dy(0)+k·d_r ]
-    Z ← Z ∪ [ ^dz(0),  ^dz(0) ]
-    δ_w(k+1) ← δ_w(k) + tan(θ)·d_r
-end for
+<b>for</b> k = 0 <b>to</b> N <b>do</b>
+    <b>if</b> k is even:
+        X ← X ∪ [ <sup>d</sup>x(0)+δ(k),  <sup>d</sup>x(0)−w<sub>d</sub>−δ(k) ]
+    <b>else:</b>
+        X ← X ∪ [ <sup>d</sup>x(0)−w<sub>d</sub>−δ(k),  <sup>d</sup>x(0)+δ(k) ]
+    Y ← Y ∪ [ <sup>d</sup>y(0)+k·d<sub>r</sub>,  <sup>d</sup>y(0)+k·d<sub>r</sub> ]
+    Z ← Z ∪ [ <sup>d</sup>z(0),  <sup>d</sup>z(0) ]
+    δ<sub>w</sub>(k+1) ← δ<sub>w</sub>(k) + tan(θ)·d<sub>r</sub>
+<b>end for</b>
 
-^wτ ← rot_{x,γ}( [X, Y, Z] )
-return ^wτ
-{% endhighlight %}
+<sup>w</sup>τ ← rot<sub>x,γ</sub>( [X, Y, Z] )
+<b>return</b> <sup>w</sup>τ</pre>
 
 The final rotation `rot_{x,γ}` about the x-axis is the key step — it tilts the planar path onto the dam's slope, holding camera-to-slope distance fixed so resolution is uniform across the whole map.
 
