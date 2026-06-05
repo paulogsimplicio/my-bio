@@ -22,7 +22,7 @@ toc:
 
 ## Overview
 
-> **You tell it the smallest defect you need to see. It tells the drone exactly how to fly to capture it in 3D.** Field-tested on a real dam — resolved hazards as small as a soccer ball.
+> **You tell it the smallest defect you need to see. It tells the drone exactly how to fly to capture it in 3D.** Experiments conducted on a real dam for hazards as small as a soccer ball.
 
 {% include figure.liquid loading="eager" path="assets/img/projects/2_project/hero_dam_with_trajectory.png" class="img-fluid rounded z-depth-1" caption="Real dam, real drone, planned trajectory overlaid on the slope." %}
 
