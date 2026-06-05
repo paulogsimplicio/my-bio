@@ -4,7 +4,7 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/my-bio/";
@@ -31,14 +31,14 @@ ninja.data = [{
             window.location.href = "/my-bio/cv/";
           },
         },{id: "nav-repositories",
-          title: "repositories",
+          title: "Repositories",
           description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/my-bio/repositories/";
           },
         },{id: "nav-blog",
-          title: "blog",
+          title: "Blog",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -435,12 +435,12 @@ ninja.data = [{
               window.location.href = "/my-bio/projects/3_project/";
             },},{id: "projects-a-behavior-tree-approach-for-battery-aware-inspection-of-large-structures-using-drones",
           title: 'A Behavior Tree Approach for Battery-Aware Inspection of Large Structures Using Drones',
-          description: "A behavior tree framework that autonomously manages battery events during UAV inspection missions — returns home, waits for recharge, and resumes from where it left off.",
+          description: "A behavior tree framework that autonomously manages battery events during UAV inspection missions, returns home, waits for recharge, and resumes from where it left off.",
           section: "Projects",handler: () => {
               window.location.href = "/my-bio/projects/4_project/";
             },},{id: "projects-robust-and-intelligent-control-of-quadrotors-subject-to-wind-gusts",
           title: 'Robust and Intelligent Control of Quadrotors Subject to Wind Gusts',
-          description: "Two DNN-augmented control architectures that keep a commercial quadrotor on track during trajectory following under real wind gusts — no wind sensor needed.",
+          description: "Two DNN-augmented control architectures that keep a commercial quadrotor on track during trajectory following under real wind gusts, no wind sensor needed.",
           section: "Projects",handler: () => {
               window.location.href = "/my-bio/projects/5_project/";
             },},{id: "projects-sim-to-real-reinforcement-learning-for-autonomous-multi-view-uav-inspection",
