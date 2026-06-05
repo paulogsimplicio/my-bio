@@ -22,7 +22,7 @@ toc:
 
 ## Overview
 
-> **You give it a sparse point cloud. It plans a photogrammetry-quality path — and replans in milliseconds when the drone hits an obstacle or needs to return home.** Validated on a real 205,000 m² coal mine tailings dam; octree replanning is up to 2.62× faster than voxel-grid methods.
+> **You give it a sparse point cloud. It plans a photogrammetry-quality path, and replans in milliseconds when the drone hits an obstacle or needs to return home.** Validated on a real 205,000 m² coal mine tailings dam; octree replanning is up to 2.62× faster than voxel-grid methods.
 
 {% include figure.liquid loading="eager" path="assets/img/projects/3_project/framework.jpg" class="img-fluid rounded z-depth-1" caption="Integrated planning framework: offline global coverage path (solid line) plus online octree-based replanning triggered by battery events or obstacle detections." %}
 
