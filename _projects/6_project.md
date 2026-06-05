@@ -94,7 +94,7 @@ A view ν<sub>t</sub>(v) counts for voxel v <b>only if all three hold:</b>
   ✓  Structure hit      — ray from viewpoint intersects voxel
   ✓  GSD range         — distance within valid photogrammetry zone
   ✓  Angular diversity  — incidence angle θ ≤ 10° from surface normal</pre>
-
+supervision
 {% include figure.liquid path="assets/img/projects/6_project/training.png" class="img-fluid rounded z-depth-1" caption="Training (top): PPO agent learns across diverse simulated structures. Inference (bottom): the policy selects progressively better viewpoints (from 1 to 30), coverage improves and views per voxel increase." %}
 
 
@@ -136,7 +136,7 @@ A view ν<sub>t</sub>(v) counts for voxel v <b>only if all three hold:</b>
 
 - A learned policy naturally discovers occlusion-aware viewpoints that fixed patterns systematically miss.
 - The multi-view coverage metric (GSD + angular diversity + hit) is the key supervision signal, it encodes photogrammetric quality directly into the reward.
-- Sim-to-real transfer requires diverse training environments, not domain randomization of physics, geometry variety is what generalises.
+- Sim-to-real transfer requires diverse training environments, not domain randomization of physics, geometry variety is what generalizes.
 
 
 ## Stack & role

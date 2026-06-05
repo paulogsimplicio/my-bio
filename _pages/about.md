@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Ph.D. Candidate in Robotics Engineering | <a href='https://mae.statler.wvu.edu/'>West Virginia University</a>
 

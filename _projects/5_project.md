@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Robust and Intelligent Control of Quadrotors Subject to Wind Gusts
-description: Two DNN-augmented control architectures that keep a commercial quadrotor on track during trajectory following under real wind gusts — no wind sensor needed.
+description: Two DNN-augmented control architectures that keep a commercial quadrotor on track during trajectory following under real wind gusts, no wind sensor needed.
 img: assets/img/projects/5_project/thumbnail.png
 importance: 4
 category: work
@@ -29,7 +29,7 @@ toc:
 
 ## Problem
 
-- Quadrotors are highly sensitive to wind gusts — even moderate disturbances cause significant trajectory drift.
+- Quadrotors are highly sensitive to wind gusts, even moderate disturbances cause significant trajectory drift.
 - Classical controllers (LQR, PID, feedback linearization) have no built-in mechanism to adapt to unknown external disturbances.
 - Dedicated wind sensors add hardware complexity; the goal is disturbance rejection from flight data alone.
 
@@ -152,14 +152,14 @@ Initialise controller gains (RLQR / LQR / PID / FL)
 
 ## Lessons learned
 
-- DNNs can learn disturbance patterns purely from position error data — no dedicated wind sensor required.
+- DNNs can learn disturbance patterns purely from position error data, no dedicated wind sensor required.
 - The RLQR's inherent robustness to parametric uncertainty makes it the best pairing with either DNN architecture.
 - A Kalman filter between the DNN and compensator is essential: raw network output is too noisy for direct compensation.
 
 
 ## Stack & role
 
-**My role:** lead author — model derivation, DNN design and training, controller implementation, experimental setup, data analysis, and writing.
+**My role:** lead author, model derivation, DNN design and training, controller implementation, experimental setup, data analysis, and writing.
 
 `ROS` &middot; `Python` &middot; `Keras / TensorFlow` &middot; `RLQR` &middot; `deep neural networks` &middot; `Kalman filter` &middot; `Parrot Bebop 2.0` &middot; `Vicon`
 

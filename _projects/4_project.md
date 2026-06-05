@@ -1,7 +1,7 @@
 ---
 layout: page
 title: A Behavior Tree Approach for Battery-Aware Inspection of Large Structures Using Drones
-description: A behavior tree framework that autonomously manages battery events during UAV inspection missions — returns home, waits for recharge, and resumes from where it left off.
+description: A behavior tree framework that autonomously manages battery events during UAV inspection missions, returns home, waits for recharge, and resumes from where it left off.
 img: assets/img/projects/4_project/thumbnail.png
 importance: 3
 category: work
@@ -22,14 +22,14 @@ toc:
 
 ## Overview
 
-> **The drone runs out of battery mid-inspection. Instead of waiting for a human to intervene, it lands, waits for a battery swap, and picks up exactly where it stopped — fully autonomously.** Field-validated on a real coal ash pit using a commercial quadrotor.
+> **The drone runs out of battery mid-inspection. Instead of waiting for a human to intervene, it lands, waits for a battery swap, and picks up exactly where it stopped, fully autonomously.** Field-validated on a real coal ash pit using a commercial quadrotor.
 
 {% include figure.liquid loading="eager" path="assets/img/projects/4_project/hero.png" class="img-fluid rounded z-depth-1" caption="Inspection mission over a tailings dam: blue path flown before the low-battery event, red path resumed automatically after battery replacement." %}
 
 
 ## Problem
 
-- Large-structure inspections routinely exceed a single battery charge — human operators must manually restart mid-mission.
+- Large-structure inspections routinely exceed a single battery charge, human operators must manually restart mid-mission.
 - Manual restarts waste time, introduce coverage gaps, and require an experienced pilot on site.
 - Standard path planners treat battery as unlimited; there is no built-in mechanism to pause, return, and resume.
 
@@ -40,7 +40,7 @@ A behavior tree (BT) that makes battery management a first-class mission behavio
 
 - Runs on a Parrot ANAFI USA via ROS 2 + `py_trees`; plugs into any external path planner.
 - Monitors battery, GPS, and drone state continuously through a blackboard shared across the tree.
-- On low battery: pushes the current coordinate back onto the waypoint queue, flies home, lands, and idles until the battery is replaced — then resumes autonomously.
+- On low battery: pushes the current coordinate back onto the waypoint queue, flies home, lands, and idles until the battery is replaced, then resumes autonomously.
 
 
 ## How it works
@@ -130,13 +130,13 @@ A behavior tree (BT) that makes battery management a first-class mission behavio
 {% include figure.liquid path="assets/img/projects/4_project/trajectory.png" class="img-fluid rounded z-depth-1" caption="3D mission trajectory: green line flown before the low-battery event (red dot), magenta line resumed after battery replacement. Battery percentage annotated at key points." %}
 
 - Drone returned home autonomously, landed, and resumed from the exact interruption point after recharge.
-- BT executes offboard on a remote computer — the drone control loop never stops during battery replacement.
+- BT executes offboard on a remote computer, the drone control loop never stops during battery replacement.
 
 
 ## Lessons learned
 
 - Behavior trees scale more cleanly than state machines for this problem: adding new fault behaviors is a local tree edit, not a global state redesign.
-- Encoding the interrupted waypoint back onto the queue is the key to seamless resumption — no replanning needed.
+- Encoding the interrupted waypoint back onto the queue is the key to seamless resumption, no replanning needed.
 - Keeping the BT offboard means the mission state survives a battery swap without any special hardware.
 
 
