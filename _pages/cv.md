@@ -1,7 +1,7 @@
 ---
 layout: cv
 permalink: /cv/
-title: resume
+title: Resume
 nav: true
 nav_order: 3
 cv_pdf: /assets/pdf/Paulo_Galvao_Simplicio_Robotics_Resume__Copy_.pdf
