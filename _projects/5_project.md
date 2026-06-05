@@ -22,7 +22,7 @@ toc:
 
 ## Overview
 
-> **Standard controllers drift when wind hits. A DNN trained on real flight data steers the controller back on track — no wind sensor required.** Two architectures tested on a commercial Parrot Bebop 2.0 under gusts up to 20.5 m/s; both improve every controller by up to 21%.
+> **Standard controllers drift when wind hits. A DNN trained on real flight data steers the controller back on track, no wind sensor required.** Two architectures tested on a commercial Parrot Bebop 2.0 under gusts up to 20.5 m/s; both improve every controller by up to 21%.
 
 {% include figure.liquid loading="eager" path="assets/img/projects/5_project/experiment.jpg" class="img-fluid rounded z-depth-1" caption="Parrot Bebop 2.0 flying under wing-generated wind gusts in the experimental arena, with Vicon markers for motion capture." %}
 
@@ -40,7 +40,7 @@ Two intelligent control architectures that combine a Robust Linear Quadratic Reg
 
 - **Architecture 1 — DNN as reference:** the network maps current and desired positions to a corrected reference signal fed to the controller, learned offline from real flights.
 - **Architecture 2 — DNN as disturbance estimator (DOBC):** the network estimates the wind disturbance from trajectory error; a Kalman filter smooths the estimate; a compensator cancels it.
-- Both architectures are modular — the same DNN wraps any of the four controllers tested (RLQR, LQR, PID, FL).
+- Both architectures are modular, the same DNN wraps any of the four controllers tested (RLQR, LQR, PID, FL).
 
 
 ## How it works
