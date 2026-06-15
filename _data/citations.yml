@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-05'
+  last_updated: '2026-06-15'
 papers:
   39QqWAkAAAAJ:2osOgNQ5qMEC:
     citations: 38
@@ -18,7 +18,7 @@ papers:
     title: Multi-Resolution Uav Path Replanning for Inspection of Tailings Dams
     year: '2025'
   39QqWAkAAAAJ:UeHWp8X0CEIC:
-    citations: 4
+    citations: 5
     title: Mission planning for photogrammetry-based autonomous 3d mapping of dams using a commercial uav
     year: '2024'
   39QqWAkAAAAJ:Y0pCki6q_DkC:
@@ -47,5 +47,5 @@ papers:
     year: '2016'
   39QqWAkAAAAJ:zYLM7Y9cAGgC:
     citations: 1
-    title: "Rastreamento de trajet\xF3ria de um quadric\xF3ptero com controle robusto e rede neural profunda"
+    title: "Rastreamento de Trajet\xF3ria de um Quadric\xF3ptero com Controle Robusto e Rede Neural Profunda"
     year: '2021'
