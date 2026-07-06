@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-29'
+  last_updated: '2026-07-06'
 papers:
   39QqWAkAAAAJ:2osOgNQ5qMEC:
     citations: 39
@@ -10,7 +10,7 @@ papers:
     title: Disturbance Observer-Based Control for Trajectory Tracking of a Quadrotor Subject to Uncertainties
     year: '2022'
   39QqWAkAAAAJ:IjCSPb-OGe4C:
-    citations: 9
+    citations: 8
     title: Robust and intelligent control of quadrotors subject to wind gusts
     year: '2024'
   39QqWAkAAAAJ:Tyk-4Ss8FVUC:
@@ -21,6 +21,10 @@ papers:
     citations: 5
     title: Mission planning for photogrammetry-based autonomous 3d mapping of dams using a commercial uav
     year: '2024'
+  39QqWAkAAAAJ:WF5omc3nYNoC:
+    citations: 0
+    title: "Avalia\xE7\xE3o do Impacto de Condi\xE7\xF5es Clim\xE1ticas Adversas na Percep\xE7\xE3o de Ve\xEDculos Aut\xF4nomos"
+    year: Unknown Year
   39QqWAkAAAAJ:Y0pCki6q_DkC:
     citations: 0
     title: Impact Assessment of Adverse Weather Conditions on the Perception of Autonomous Vehicles
