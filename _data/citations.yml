@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-07-20'
+  last_updated: '2026-08-07'
 papers:
   39QqWAkAAAAJ:2osOgNQ5qMEC:
-    citations: 39
+    citations: 40
     title: Disturbance observer-based robust control of a quadrotor subject to parametric uncertainties and wind disturbance
     year: '2022'
   39QqWAkAAAAJ:9yKSN-GCB0IC:
@@ -10,12 +10,12 @@ papers:
     title: Disturbance Observer-Based Control for Trajectory Tracking of a Quadrotor Subject to Uncertainties
     year: '2022'
   39QqWAkAAAAJ:IjCSPb-OGe4C:
-    citations: 9
+    citations: 8
     title: Robust and intelligent control of quadrotors subject to wind gusts
     year: '2024'
   39QqWAkAAAAJ:Tyk-4Ss8FVUC:
     citations: 1
-    title: Multi-Resolution Uav Path Replanning for Inspection of Tailings Dams
+    title: Multi-Resolution UAV path replanning for inspection of tailings dams
     year: '2025'
   39QqWAkAAAAJ:UeHWp8X0CEIC:
     citations: 5
