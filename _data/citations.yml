@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-08-28'
+  last_updated: '2026-09-07'
 papers:
   39QqWAkAAAAJ:2osOgNQ5qMEC:
-    citations: 42
+    citations: 45
     title: Disturbance observer-based robust control of a quadrotor subject to parametric uncertainties and wind disturbance
     year: '2022'
   39QqWAkAAAAJ:9yKSN-GCB0IC:
@@ -10,7 +10,7 @@ papers:
     title: Disturbance Observer-Based Control for Trajectory Tracking of a Quadrotor Subject to Uncertainties
     year: '2022'
   39QqWAkAAAAJ:IjCSPb-OGe4C:
-    citations: 10
+    citations: 11
     title: Robust and intelligent control of quadrotors subject to wind gusts
     year: '2024'
   39QqWAkAAAAJ:Tyk-4Ss8FVUC:
